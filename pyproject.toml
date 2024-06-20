@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "velodyne"
+version = "0.1.0"
+description = ""
+authors = ["anton <treskunov@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.24.3"
+std-msgs = {version = "^0.5.13.post0", source = "ros"}
+pyyaml = "^6.0.1"
+matplotlib = "^3.9.0"
+
+
+[tool.poetry.group.dev.dependencies]
+rosbag = "^1.15.11"
+open3d = "^0.18.0"
+scikit-learn = "^1.4.1.post1"
+lz4 = "^4.3.2"
+roslz4 = "^1.14.3.post2"
+addict = "^2.4.0"
+pillow = "^10.3.0"
+pandas = "^2.2.2"
+tqdm = "^4.66.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "ros"
+url = "https://rospypi.github.io/simple/"
+priority = "supplemental"
